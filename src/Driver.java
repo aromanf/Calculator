@@ -1,12 +1,15 @@
 import java.util.Scanner;
 
-public class Calculator {
+public class Driver {
     public static void main(String[] args) {
         bCalculator bcalc = new bCalculator();
         Scanner reader = new Scanner(System.in);
         String choice;
         int x,y;
         boolean quit = false;
+        int[] number_array = {1,2,3,4,5};
+
+        System.out.println("Array : " + number_array[0]);
 
 
         System.out.println("--- Calculator ---");
