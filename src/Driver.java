@@ -32,6 +32,12 @@ public class Driver {
                     y = Integer.parseInt(reader.next());
                     System.out.println(x + " " + choice + " " + y + " = " + bcalc.subs(x,y));
                     break;
+                case "*":
+                    System.out.println("Enter the first number: ");
+                    x = Integer.parseInt(reader.nextLine());
+                    System.out.println("Enter the second number: ");
+                    y = Integer.parseInt(reader.nextLine());
+                    System.out.println(bcalc.multiply(x,y));
                 case "quit" :
                     quit = true;
 

@@ -14,4 +14,8 @@ public class bCalculator {
 
         throw new IllegalArgumentException("Y can not be 0.");
     }
+
+    public int multiply(int x, int y) {
+        return x * y;
+    }
 }
