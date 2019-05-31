@@ -7,40 +7,38 @@ public class Driver {
         String choice;
         int x,y;
         boolean quit = false;
-        int[] number_array = {1,2,3,4,5};
-
-        System.out.println("Array : " + number_array[0]);
 
 
-        System.out.println("--- Calculator ---");
 
         while(!quit) {
-            System.out.println("Select an option: ");
-            choice = reader.nextLine();
+            System.out.println("--- Calculator ---");
+            System.out.println("+ : Addition\n- : Subtraction\n* : Multiplication\n quit: Quit\n");
+            System.out.print("Select an option: ");
+            choice = reader.next();
             switch(choice) {
                 case "+" :
-                    System.out.println("Enter the first number: ");
+                    System.out.print("Enter the first number: ");
                     x = Integer.parseInt(reader.next());
-                    System.out.println("Enter the second number: ");
+                    System.out.print("Enter the second number: ");
                     y = Integer.parseInt(reader.next());
-                    System.out.println(x + " " + choice + " " + y + " = " + bcalc.add(x,y));
+                    System.out.println(x + " " + choice + " " + y + " = " + bcalc.add(x,y) + "\n");
                     break;
                 case "-" :
-                    System.out.println("Enter the first number: ");
+                    System.out.print("Enter the first number: ");
                     x = Integer.parseInt(reader.next());
-                    System.out.println("Enter the second number: ");
+                    System.out.print("Enter the second number: ");
                     y = Integer.parseInt(reader.next());
-                    System.out.println(x + " " + choice + " " + y + " = " + bcalc.subs(x,y));
+                    System.out.println(x + " " + choice + " " + y + " = " + bcalc.subs(x,y) + "\n");
                     break;
                 case "*":
-                    System.out.println("Enter the first number: ");
-                    x = Integer.parseInt(reader.nextLine());
-                    System.out.println("Enter the second number: ");
-                    y = Integer.parseInt(reader.nextLine());
-                    System.out.println(bcalc.multiply(x,y));
+                    System.out.print("Enter the first number: ");
+                    x = Integer.parseInt(reader.next());
+                    System.out.print("Enter the second number: ");
+                    y = Integer.parseInt(reader.next());
+                    System.out.println(bcalc.multiply(x,y) + "\n");
+                    break;
                 case "quit" :
                     quit = true;
-
             }
         }
     }
